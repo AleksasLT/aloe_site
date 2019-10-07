@@ -137,7 +137,18 @@ section {
 }
 /*price section*/
 .price-slider {
-  &_sofas, ._armchairs {
+            position: relative;
+            perspective: 1000px;
+            background-color: inherit;
+            border: none;
+  &._sofas, ._armchairs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 2s;
+    backface-visibility: hidden;
     margin-top: 5rem;
     min-height: 600px;
     min-width: auto;

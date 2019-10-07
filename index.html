@@ -151,7 +151,8 @@
                                 <div class="col-4 offset-1">
                                     <div class="price-picture_description">
                                         <h3>Диван 3-х местный</h3>
-                                        <p></p>
+                                        <p>Цена ~ 1500р</p>
+                                        <p>Время раьоты ~ 1ч 30мин</p>
                                     </div>   
                                </div>
                         </div>
@@ -172,8 +173,8 @@
                     <div class="col-4 offset-1">
                         <div class="price-picture_description">
                             <h3>Кресло тип 1</h3>
-                            <p>Цена ~ </p>
-                            <p>Время работы ~ </p>
+                            <p>Цена ~ 500р</p>
+                            <p>Время работы ~ 30мин</p>
                         </div>
                     </div>
                 </div>
@@ -188,8 +189,8 @@
                         <div class="col-4 offset-1">
                             <div class="price-picture_description">
                                 <h3>Кресло тип 1</h3>
-                                <p>Цена ~ </p>
-                                <p>Время работы ~ </p>
+                                <p>Цена ~ 900р</p>
+                                <p>Время работы ~ 40мин</p>
                             </div>
                         </div>
                     </div>
@@ -229,13 +230,13 @@
          $(document).ready(function(){
             $('.sofa').on('click', function(e){
             e.preventDefault();
-            $('.price-slider_sofas').fadeIn('slow');
-            $('.price-slider_armchairs').fadeOut('slow');
+            $('.price-slider_sofas').show();
+            $('.price-slider_armchairs').hide();
          });
          $('.armchair').on('click', function(k){
             k.preventDefault();
-            $('.price-slider_sofas').fadeOut('slow');
-            $('.price-slider_armchairs').fadeIn('slow');
+            $('.price-slider_sofas').hide();
+            $('.price-slider_armchairs').show();
          });
      /*price slider*/
      $('.price-slider_sofas').slick({

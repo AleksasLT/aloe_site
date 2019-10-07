@@ -124,8 +124,21 @@ section {
   margin-left: 35rem;
 }
 /*price section*/
-.price-slider_sofas,
+.price-slider {
+  position: relative;
+  perspective: 1000px;
+  background-color: inherit;
+  border: none;
+}
+.price-slider._sofas,
 .price-slider ._armchairs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 2s;
+  backface-visibility: hidden;
   margin-top: 5rem;
   min-height: 600px;
   min-width: auto;
