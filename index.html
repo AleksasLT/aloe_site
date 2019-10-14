@@ -227,7 +227,12 @@
 
      <!--JS-->
      <script>
-         $(document).ready(function(){
+             /*price slider*/
+            $('.price-slider-sofas').fadeIn('fast');
+            $('.price-slider-armchairs').fadeOut('fast');
+            $('.price-slider-mattresses').fadeOut('fast');
+            $('.price-slider-karpets').fadeOut('fast');
+
             $('.sofa').on('click', function(e){
             e.preventDefault();
             $('.price-slider_sofas').show();
